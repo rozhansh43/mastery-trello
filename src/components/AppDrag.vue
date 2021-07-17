@@ -14,7 +14,8 @@ export default {
   props: {
     transferData: {
       type: Object,
-      required: true
+      required: true,
+      default: () => []
     }
   },
   methods: {
