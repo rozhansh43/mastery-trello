@@ -1,0 +1,38 @@
+body, html {
+  height: 100%;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  height: 100%;
+}
+
+.container {
+  @apply mx-auto;
+}
+.task {
+  @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white text-grey-darkest no-underline;
+}
+.task-view {
+  @apply relative flex flex-row bg-white pin mx-4 m-32 mx-auto py-4 text-left rounded shadow;
+  max-width: 700px;
+}
+.button {
+  @apply inline-flex px-4 py-2 text-white font-bold rounded items-center;
+}
+.column {
+  @apply bg-grey-light p-2 mr-4 text-left shadow rounded;
+  min-width: 350px;
+}
+.board {
+  @apply p-4 bg-teal-dark h-full overflow-auto;
+}
+
+.task-bg {
+  @apply pin absolute;
+  background: rgba(0,0,0,0.5);
+}

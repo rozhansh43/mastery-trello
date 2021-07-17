@@ -66,9 +66,3 @@ export default {
 }
 </script>
 
-<style lang="css">
-.column {
-  @apply bg-grey-light p-2 mr-4 text-left shadow rounded;
-  min-width: 350px;
-}
-</style>

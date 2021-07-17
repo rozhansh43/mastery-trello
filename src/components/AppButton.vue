@@ -24,8 +24,4 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-.button {
-  @apply inline-flex px-4 py-2 text-white font-bold rounded items-center;
-}
-</style>
+
