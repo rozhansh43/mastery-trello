@@ -5,6 +5,6 @@
 </template>
 
 <style>
-@import 'assets/styles/tailwind.postcss';
-@import 'assets/styles/style.css';
+/* @import 'assets/styles/tailwind.postcss';
+@import 'assets/styles/style.css'; */
 </style>
