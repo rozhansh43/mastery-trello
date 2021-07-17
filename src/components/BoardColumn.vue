@@ -1,8 +1,8 @@
 <template>
-  <AppDrop
+  <app-drop
     @drop="moveTaskOrColumn"
   >
-    <AppDrag
+    <app-drag
       class="column"
       :transferData="{
         type: 'column',
@@ -13,7 +13,7 @@
         {{ column.name }}
       </div>
       <div class="list-reset">
-        <ColumnTask
+        <column-task
           v-for="(task, $taskIndex) of column.tasks"
           :key="$taskIndex"
           :task="task"
@@ -30,8 +30,8 @@
           @keyup.enter="createTask($event, column.tasks)"
         />
       </div>
-    </AppDrag>
-  </AppDrop>
+    </app-drag>
+  </app-drop>
 </template>
 
 <script>

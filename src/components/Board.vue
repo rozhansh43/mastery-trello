@@ -1,7 +1,7 @@
 <template>
   <div class="board">
     <div class="flex flex-row items-start">
-      <BoardColumn
+      <board-column
         v-for="(column, $columnIndex) of board.columns"
         :key="$columnIndex"
         :column="column"

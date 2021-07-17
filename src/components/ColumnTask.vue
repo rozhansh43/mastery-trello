@@ -1,8 +1,8 @@
 <template>
-  <AppDrop
+  <app-drop
     @drop="moveTaskOrColumn"
   >
-    <AppDrag
+    <app-drag
       class="task"
       :transferData="{
         type: 'task',
@@ -20,8 +20,8 @@
       >
         {{ task.description }}
       </p>
-    </AppDrag>
-  </AppDrop>
+    </app-drag>
+  </app-drop>
 </template>
 
 <script>
@@ -30,7 +30,10 @@ import AppDrag from './AppDrag'
 import AppDrop from './AppDrop'
 
 export default {
-  components: { AppDrag, AppDrop },
+  components: { 
+    AppDrag, 
+    AppDrop 
+  },
   mixins: [movingTasksAndColumnsMixin],
   props: {
     task: {
